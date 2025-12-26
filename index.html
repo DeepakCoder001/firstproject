@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            /* background-color: black; */
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .img-1 {
+            width: 57%;
+            height: 480px;
+        }
+
+        .img-1>img {
+            height: 450px;
+            margin-left: 230px;
+            margin-top: 55px;
+        }
+
+        .inp {
+            float: right;
+            margin: -311px 190px;
+            height: 280px;
+            /* position: relative; */
+
+        }
+
+        .inp>input {
+            width: 230px;
+            height: 34px;
+            background-color: #111;
+            border: 1px solid #555;
+            border-radius: 4px;
+            color: #fff;
+            outline: none;
+            margin-bottom: -12px;
+            padding: 10px;
+        }
+
+        button {
+            width: 230px;
+            height: 30px;
+            border: 1px solid #555;
+            border-radius: 7px;
+            color: #fff;
+            outline: none;
+            background-color: #007BFC;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .inp>h1 {
+            font-family: 'Grand Hotel';
+            color: white;
+            font-size: 55px;
+            font-weight: initial;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: -85px;
+        }
+
+        .inp>.p1 {
+            border-bottom: 1px solid #444;
+            margin-top: 27px
+        }
+
+        .inp>.p1>p {
+
+            color: #c7bfbf;
+            text-align: center;
+            /* align-items: center; */
+            margin-bottom: -9px;
+            background-color: rgb(0, 0, 0);
+            width: 43px;
+            font-size: 13px;
+            /* padding: 10px 0px; */
+            margin-left: 40%;
+
+        }
+
+        .inp>p {
+            color: rgb(0, 100, 224);
+            margin-top: 42px;
+            position: absolute;
+            margin-left: 64px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+
+        .inp>i {
+            position: relative;
+            margin-top: 38.5px;
+            font-size: 20px;
+            margin-left: 33px;
+        }
+
+        .inp>.p2 {
+            color: rgb(255, 255, 255);
+            margin-top: 20px;
+            margin-left: 68px;
+        }
+
+        .inp>.p3 {
+            color: rgb(255, 255, 255);
+            margin-top: 80px;
+            margin-left: 30px;
+            text-align: center;
+        }
+
+        .inf {
+            height: 100px;
+        }
+
+        .inf>p {
+            color: white;
+            font-size: 11px;
+            word-spacing: 22px;
+            text-align: center;
+            margin-top: 100px;
+            color: #CED0D4;
+
+        }
+
+        .inf>.a {
+            font-size: 11px;
+            /* word-spacing: 22px; */
+            text-align: center;
+            margin-top: 20px;
+            color: #CED0D4;
+            word-spacing: normal;
+            margin-left: 130px;
+            position: relative;
+        }
+
+        .inf>select {
+            position: absolute;
+            width: 70px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            margin-left: 540px;
+            margin-top: 3px;
+            height: 50px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .inf>select>option {
+            background-color: white;
+            color: black;
+
+        }
+
+        /* .inf>p:hover{
+            border-bottom: 1px solid white;
+        } */
+        .inp>.btn {
+            /* position: absolute; */
+            width: 50px;
+            margin-left: -50px;
+            background-color: #111;
+            border: none;
+            font-size: 10px;
+            margin-bottom: 10px;
+            /* z-index: -1; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img-1">
+        <img src="../task/landing-3x (1).png" alt="">
+    </div>
+    <div class="inp">
+        <h1>Instagram</h1>
+        <input type="text" placeholder="username,phone number"> <br><br>
+        <input type="password" placeholder="password" id="inp">
+        <button class="btn" onclick="show(this)">Show</button> <br><br>
+        <button>Log in</button>
+        <div class="p1">
+            <p>OR</p>
+        </div>
+        <p>Log in with Facebook</p>
+        <i class="fa-brands fa-facebook" style="color: #1877F2"></i>
+        <p class="p2">Forgot password?</p>
+        <p class="p3">Don't have an account?
+            <span style="color: #007BFC;">Sign up</span>
+        </p>
+    </div>
+    <div class="inf">
+        <p>Meta
+            About
+            Blog
+            Jobs
+            Help
+            API
+            Privacy
+            Terms
+            Locations
+            InstagramLite
+            MetaAI
+            MetaAIArticles
+            Threads
+            ContactUploading&Non-Users
+            MetaVerified</p>
+        <select>
+            <option>English</option>
+            <option>हिन्दी</option>
+            <option>Abanyom (Bantu)</option>
+            <option>Abaza (Northwest Caucasian)</option>
+            <option>Abkhaz or Abkhazian (Northwest Caucasian)</option>
+            <option>Abujmaria (Dravidian)</option>
+            <option>Acehnese (Malayo-Polynesian)</option>
+            <option>Adamorobe Sign Language (Signing)</option>
+            <option>Adele (Kwa)</option>
+            <option>Adyghe (Northwest Caucasian)</option>
+            <option>Afar (Cushitic)</option>
+            <option>Afar (Cushitic)</option>
+            <option> Afrikaans (Germanic)</option>
+            <option> Afro-Seminole Creole (English-based creole)</option>
+            <option> Aimaq or Barbari (Iranian)</option>
+        </select>
+        <p class="a">© 2025 Instagram from Meta</p>
+        <script>
+            let a = document.getElementById("inp");
+            function show(tag) {
+                if (tag.innerHTML == "Show") {
+                    tag.innerHTML = "Hide";
+                    a.type = "text";
+                }
+                else {
+                    tag.innerHTML = "Show";
+                    a.type = "password";
+                }
+
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
